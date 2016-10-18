@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>formulaire html</title>
+    <head>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1>Création de compte</h1>
+    <hr />
+
+    <div class="col-md-8">
+
+      <form>
+
+        <div>
+          <input name="sexe" id="garcon" type="radio" />
+          <label for="garcon">Garçon</label>
+
+          <input name="sexe" id="fille" type="radio" />
+          <label for="fille">Fille</label>
+
+          <input name="sexe" id="indif" type="radio" />
+          <label for="indif">Indifferent</label>
+        </div>
+
+        <div>
+          <label for="nom">Nom</label>
+          <input id="nom" class="form-control" required="required" placeholder="Min. 3 caractères" type="text" />
+        </div>
+
+        <div>
+          <label for="prenom">Prénom</label>
+          <input id="prenom" class="form-control"  placeholder="Min. 3 caractères" required="required" type="text" />
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <input id="age" class="form-control"  placeholder="Age  entre 18 et 99" required="required" type="text" />
+        </div>
+
+        <div>
+          <label for="tel">Téléphone</label>
+          <input id ="tel" class="form-control"  placeholder="XXXXXXXXXX" required="required" type="text" />
+        </div>
+
+      <div>
+          <label for="ville">Ville</label>
+          <input id="ville" class="form-control"  placeholder="Ex: Lyon" required="required" type="text" />
+        </div>
+
+      <div>
+          <label for="cp">Code Postal</label>
+          <input id="cp" class="form-control"  placeholder="Ex: 69100" required="required" type="text" />
+        </div>
+
+        <br />
+      <div>
+        <label for="description">Description</label>
+        <button id="FSplus" type="button" name="button">+</button>
+        <button id="FSmoins" type="button" name="button">-</button>
+        <textarea style="font-size:1em" id="description" class="form-control" placeholder="Biographie en qqs lignes..."></textarea>
+        <span class="help-block"><b>300</b> caractères</span>
+      </div>
+
+        <div>
+          <label for="username">Username</label>
+          <input id="username" placeholder="Min. 8 caractères" class="form-control" type="text" />
+        </div>
+
+        <div>
+          <label for="photo">Photo</label>
+          <input id="photo" placeholder="http://" class="form-control" type="text" />
+          <img id="photoPreview" src=" " alt="" />
+        </div>
+
+
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" class="form-control" type="email" />
+        </div>
+
+
+
+        <div>
+          <label for="passwordConfirm">Confirmer le mot de passe</label>
+          <input id="passwordConfirm" class="form-control" type="password" placeholder="min 5 caractères" />
+        </div>
+
+        <div>
+          <label for="password">Mot de passe</label>
+          <input id="password" class="form-control" type="password" placeholder="min 5 caractères" />
+          <br />
+        </div>
+
+<!-- bar de progression bootstrap -->
+          <div class="progress" style="height: 4px; width: 200px">
+
+            <div class="progress-bar progress-bar-success" style="width: 35%">
+            <span class="sr-only">35% Complete (success)</span>
+            </div>
+<!--
+            <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+              <span class="sr-only">20% Complete (warning)</span>
+            </div>
+
+            <div class="progress-bar progress-bar-danger" style="width: 10%">
+              <span class="sr-only">10% Complete (danger)</span>
+            </div>
+-->
+          </div>
+<!-- bar de progression bootstrap -->
+
+        <div>
+          <input id="passClear" type="checkbox" /><label for="passClear">  Voir le mot de passe en clair</label>
+        </div>
+        <div>
+          <label for="capcha">Capcha: Recopier l'adition de ces 2 nombres</label>
+          <span id="capchaUn">XX</span> + <span id="capchaDeux">XY</span>
+          <input id="capcha" class="form-control" type="text" placeholder="resultat de mon addition" />
+        </div>
+
+        <div>
+          <input id="cgu" type="checkbox" />
+          <label for="cgu">J'accepte les CGU</label>
+        </div>
+
+
+        <div>
+
+          <label>Comment avez-vous connus notres site?</label>
+          <input id="howWeb" type="checkbox" /><label for="howWeb">Site Web</label>
+          <input id="howTel" type="checkbox" /><label for="howTel">Téléphone</label>
+          <input id="howAnn" type="checkbox" /><label for="howAnn">Annuaire</label>
+          <input id="howSocial" type="checkbox" /><label for="howSocial">Réseaux sociaux</label>
+          <input id="howHear" type="checkbox" /><label for="howHear">Bouche à oreille</label>
+          <input id="howOther" type="checkbox" /><label for="howOther">Autre...</label>
+
+
+        </div>
+
+        <button id="submitF" type="button">
+        Créer ce compte
+      </button>
+
+      </form>
+
+    </div>
+
+
+<!-- Appel librairie jquery -->
+
+      <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous">
+      </script>
+
+<!--Appel de mon script perso -->
+      <script type="text/javascript" src="js/formulaire.js"></script>
+
+  </body>
+</html>
